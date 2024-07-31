@@ -1,0 +1,95 @@
+#portfolio{
+  padding: 20px 0;
+  z-index: 0;
+}
+
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  z-index: 0;
+}
+.work{
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+}
+.work img{
+  width:100%;
+  
+  /* height: 480px; */
+  border-radius: 10px;
+  display:block ;
+  transition:  transform 0.5s;
+}
+.spam-img{
+  height:100%;
+}
+.layer{
+  height: 0;
+  width: 100%;
+  position:absolute;
+  left:0;
+  bottom:0;
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  border-radius: 10px;
+  overflow:hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+  
+}
+
+
+.layer h3{
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.layer a{
+  margin-top: 20px;
+  color:#ff004f;
+  text-decoration: none;
+  font-size: 22px;
+  line-height:60px;
+  background: #fff;
+  height:60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+.work:hover img{
+  transform: scale(1.1);
+  border-radius: 15px;
+
+}
+.work:hover .layer{
+  height: 100%;
+}
+.work:focus .layer{
+  height: 0;
+}
+
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  padding: 14px 50px;
+  border:1px solid #ff004f;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: #ff004f;
+}

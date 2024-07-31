@@ -1,0 +1,133 @@
+
+nav .bx{
+  display: none;
+}
+
+
+@media only screen and (max-width:600px){
+  #header{
+  background-image: url('../images/mobile-background.png');
+  background-position:  100px 0 ;
+  background-attachment: fixed;
+  background-size:80vw 100vh;
+  height: 100vh;
+  text-align: left;
+  }
+  .header-profession{
+    margin-top: 135%;
+    font-size: 16px;
+  }
+  .header-info{
+    font-size: 28px;
+  }
+  .sanket span{
+    display: inline;
+    vertical-align:text-top;
+  } 
+  nav .bx{
+    display: block;
+    font-size: 30px;
+    
+  }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top:0;
+    right: -200px;;
+    width:200px;
+    height:100vh;
+    padding-top: 50px ;
+    transition: right 0.6s;
+    
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul li a{
+    color: white;
+  }
+
+
+  nav ul .bx{
+    position: absolute;
+    top:25px;
+    left:18px;
+    cursor: pointer;
+    color: white;
+  }
+  nav ul .bx:active{
+    opacity: 0.8;
+  }
+  nav i:active{
+    opacity: 0.8;
+  }
+  
+  .sub-title{
+    font-size: 35px;
+  }
+  .about-col-1,.about-col-2{
+    flex-basis: 100%;
+
+  }
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+  .about-col-2 p{
+    font-size: 14px;
+    flex-wrap:nowrap;
+    /* text-indent: 50px; */
+    /* letter-spacing: 3px;
+    text-align: justify; */
+  }
+  .tab-links{
+    font-size: 16px;
+    margin-right: 20px
+  }
+  .contact-left,.contact-right{
+    flex-basis: 100%;
+
+  }
+  .copywrite{
+    font-size: 12px;
+  }
+  .rights{
+    display: none;
+  }
+  .year{
+    display: none;
+  }
+  .social-media-icons{
+    display: flex;
+    flex-direction: column;
+  }
+  .social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 8px;
+  color:#ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+#sidemenu{
+  z-index:100;
+}
+  
+
+}
+@media only screen and (max-width:740px){
+
+  #header{
+    background-position:  75px 0 ;
+  }
+  .header-profession{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header-info{
+    font-size: 26px;
+  }
+  .copyright p{
+    font-size: 11px;
+  }
+}
