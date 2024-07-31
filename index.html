@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- **********  WEBSITE TITLE  **********  -->
+
+  <title>Sanket-portfolio</title>
+
+  <!-- **********  POPPINS FONT FROM GOOGLE FONTS  ********** -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- **********  CSS STYLES FOR WEBSITE  **********  -->
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/About.css">
+  <link rel="stylesheet" href="styles/services.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/media-query.css">
+  <link rel="stylesheet" href="styles/scrollbar.css">
+
+  <!-- **********  ICONS FROM BOXICONS   **********  -->
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- **********  WEBSITE ICON  ********** -->
+
+  <link rel="icon" type="image/x-icon" href="icons/website-icon.png">
+
+</head>
+<body>
+
+  <!-- --============================================ HEADER ================================================-- -->
+
+  <header id="header">
+    <div class="container">
+      <nav>
+        <p class="sanket"><span class="s">S</span>anket.</p>
+        <ul id="sidemenu">
+          <li><a href="#header" onclick="closemenu()" class="home">Home</a></li>
+          <li><a href="#about"  onclick="closemenu()" class="about">About</a></li>
+          <li><a href="#services" onclick="closemenu()" class="services">Services</a></li>
+          <li><a href="#portfolio" onclick="closemenu()" class="portfolio">Portfolio</a></li>
+          <li><a href="#contact"  onclick="closemenu()" class="contact">Contact</a></li>        
+          <i class='bx bx-x' onclick="closemenu()" id="close-menu"></i>
+        </ul>
+        <i class='bx bx-menu' onclick="openmenu()" id="open-menu"></i>
+      </nav>
+      <div>
+        <p class="header-profession">
+          Data Analyst
+        </p>
+        <h1 class="header-info" >
+          Hi, I'm <span class="header-span-name">Sanket</span><br> a Passinate <br>
+          Data Science  Ethusiast.
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- --============================================ ABOUT ================================================-- -->
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1 hidden  ">
+              <img src="images/about.png" alt="">
+          </div>
+          <div class="about-col-2 hidden">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus odit deserunt numquam quos omnis natus earum sit  excepturi? Cupiditate atque doloribus reiciendis voluptatum quos accusantium voluptate ab ut soluta voluptates.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links " onclick="opentab('Technologies')">Technologies</p>
+              <p class="tab-links " onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab"  id="Skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span> <br>Designing Web interfaces
+                </li>
+                <li>
+                  <span>Web development</span><br>Web app frontend development
+                </li>
+                <li>
+                  <span>Data Analysis</span><br> Gathers and interprets data to solve a finance problems etc
+                </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Technologies">
+              <ul>
+                <li>
+                  <span>React</span> <br>frontend web development
+                </li>
+                <li>
+                  <span>Python</span><br>for Data Analysis
+                </li>
+                <li>
+                  <span>Node.js</span><br> backend web development
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2021-current</span> <br>SIES Graduate School of Technology, Nerul
+                </li>
+                <li>
+                  <span>2019-2021</span><br>K J Somaiya Science & Commerce,Vidyavihar kurla 
+                </li>
+                <li>
+                  <span>2006-2018</span><br> M E S High School, Airoli 
+                </li>
+              </ul>
+            </div> 
+          </div>          
+        </div>
+      </div>
+    </section>
+
+  <!-- ---====================================================== SERVICES =============================================--- -->
+
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title " >My Services</h1>
+      <div class="services-list">
+        <div class="service ">          
+          <i class='bx bx-code-alt' type="solid"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, porro quaerat blanditiis totam sed eius!</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="service ">
+          <i class='bx bxs-crop'></i>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, porro quaerat blanditiis totam sed eius!
+          </p>
+          <a href="#">Learn More</a>
+        </div>         
+        <div class="service ">
+          <i class='bx bxs-data' ></i>
+          <h2>Data Analysis</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat aliquid velit mollitia debitis re. </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---====================================================== PORTFOLIO =============================================--- -->
+
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">
+        My Work
+      </h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="">
+          <div class="layer"  id="layer">
+            <h3>Emotion Based Song Reccomender </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, praesentium?</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img  class="spam-img"src="images/work-2.jpg" alt="">
+          <div class="layer" tabindex="0"  id="layer">
+            <h3>Email Spam Classifier </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, praesentium?</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.avif" alt="">
+            <div class="layer"  id="layer">
+            <h3>Modern Website </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, praesentium?</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+      </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+  </section>
+
+  <!-- ---====================================================== CONTACT ME =============================================--- -->
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>          
+          <p>
+            <i class='bx bx-envelope' ></i>
+            sjgade72@gmail.com </span>
+          <p>
+            <i class='bx bxs-phone' ></i>
+            8691068301
+          </p>
+          <div class="social-icons">
+            <a href="#">              
+            <i class='bx bxl-github' ></i>
+            </a>
+            <a href=""><i class='bx bxl-telegram' ></i></a>
+            <a href=""><i class='bx bxl-whatsapp' ></i></a>
+            <a href=""><i class='bx bxl-linkedin-square' ></i></a>
+          </div>
+          <a href="" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form >
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="text" name ="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit"class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ---====================================================== FOOTER =============================================--- -->
+
+  <section class="copyright">
+      <p>copyright ©  <span class="year">2023</span> Sanket. | Made with  <i class='bx bxs-heart' ></i>  by  Sanket <span class="rights">| All rights reserved</span>  </p>
+    </section>
+  <script src="script.js"></script>
+</body>
+</html>
